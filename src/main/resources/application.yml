@@ -1,0 +1,27 @@
+# ?? ?? ??
+server:
+  port: 8082
+
+# database ?? ??
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/prdb?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: root
+    password: dhgusdl1**
+  thymeleaf:
+    cache: false
+  message:
+    basename: messages
+#  security:
+#    user:
+#      name: Kwonoh
+#      password: mygod
+
+  # spring data jpa ??
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
